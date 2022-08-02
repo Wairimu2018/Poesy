@@ -1,11 +1,11 @@
 import React from "react";
-import Poem from "../Hooks/Poem";
+import Poem from "./Poem";
 
 function PoemsContainer() {
   return (
     <div className="poems-container">
       {/* render a list of <Poem> components in here */}
-      <Poem poems={poems}/>
+      <Poem poems={Poem}/>
     </div>
   );
 }

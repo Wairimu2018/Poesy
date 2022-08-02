@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState,useEffect } from "react";
 import PoemsContainer from "./PoemsContainer";
 import NewPoemForm from "./NewPoemForm";
 
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="app">
       <div className="sidebar">
-      <button onClick={handleClick} >Show/hide new poem form</button>
+        <button onClick={handleClick} >Show/hide new poem form</button>
         {poemForm ? <NewPoemForm onAddPoem={onAddPoem}/> : null}
       </div>
       <PoemsContainer poems={poems}/>
